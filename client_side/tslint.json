@@ -5,8 +5,9 @@
     ],
     "jsRules": {},
     "rules": {
-      "quotemark": [false],
-      "semicolon": [false]
+      "quotemark": [false], // false: 关闭双引号
+      "semicolon": [false],	// false: 关闭末尾分号
+      "interface-name": [true, "never-prefix"] // never-prefix: 不需要前缀
     },
     "rulesDirectory": []
 }
