@@ -82,3 +82,19 @@ const p: Person = {
   age: 18
 }
 
+/**
+ *5.接口混入
+ */
+interface Counter {
+  count: number,
+  ():void
+}
+const getCounter = (): Counter => {
+  const cc = () => {
+     return cc.count++;
+  }
+  cc.count = 0;
+  return cc;
+}
+const c:Counter = getCounter();
+
