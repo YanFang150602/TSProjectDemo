@@ -46,3 +46,11 @@ const veg2: Vegetables = {
   type: 'potato'
 }
 // veg2.type = 'fish'; 无法分配到 "type" ，因为它是只读属性。
+
+/**
+ *2.利用函数定义接口
+ */
+interface AddFunc｛
+  （num: number, num2: number): number
+｝
+const add: AddFunc = (n1, n2) => n1 + n2;
