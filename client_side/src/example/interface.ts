@@ -48,7 +48,7 @@ const veg2: Vegetables = {
 // veg2.type = 'fish'; 无法分配到 "type" ，因为它是只读属性。
 
 /**
- *2.利用函数定义接口
+ *2.利用接口定义函数结构
  */
 interface AddFunc｛
   （num: number, num2: number): number
