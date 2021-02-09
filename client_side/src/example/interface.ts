@@ -67,3 +67,18 @@ const bean:Bean = {
   'name': 'yanff',
   12: 'extend' // 该属性虽是number类型，但实际number类型属性会被转成string类型
 }
+
+/**
+ *4.接口继承
+ */
+interface Animal ｛
+  age: number
+}
+interface Person extends Animal {
+  name:string
+}
+const p: Person = {
+  name: 'Yanff',
+  age: 18
+}
+
