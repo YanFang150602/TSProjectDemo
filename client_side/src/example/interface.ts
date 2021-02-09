@@ -4,7 +4,7 @@
 getFullName({firstName: 'li', lastName: 18}); 18不是我们想要的数据类型 */
 
 /**
- *  1、利用接口定义对象的结构
+ *  1、利用接口定义对象类型
  */
 
 interface NameInfo {
@@ -48,7 +48,7 @@ const veg2: Vegetables = {
 // veg2.type = 'fish'; 无法分配到 "type" ，因为它是只读属性。
 
 /**
- *2.利用接口定义函数结构
+ *2.利用接口定义函数类型
  */
 interface AddFunc｛
   （num: number, num2: number): number
