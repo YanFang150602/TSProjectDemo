@@ -54,3 +54,16 @@ interface AddFunc｛
   （num: number, num2: number): number
 ｝
 const add: AddFunc = (n1, n2) => n1 + n2;
+
+
+/**
+ *3.接口属性索引
+ */
+interface Bean{
+  [key: string]: string
+}
+const bean:Bean = {
+  'id': 'ywx964151',
+  'name': 'yanff',
+  12: 'extend' // 该属性虽是number类型，但实际number类型属性会被转成string类型
+}
