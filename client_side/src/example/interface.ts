@@ -50,9 +50,9 @@ const veg2: Vegetables = {
 /**
  *2.利用接口定义函数类型
  */
-interface AddFunc｛
-  （num: number, num2: number): number
-｝
+interface AddFunc{
+  (num: number, num2: number): number
+}
 const add: AddFunc = (n1, n2) => n1 + n2;
 
 
@@ -71,7 +71,7 @@ const bean:Bean = {
 /**
  *4.接口继承
  */
-interface Animal ｛
+interface Animal {
   age: number
 }
 interface Person extends Animal {
@@ -96,5 +96,5 @@ const getCounter = (): Counter => {
   cc.count = 0;
   return cc;
 }
-const c:Counter = getCounter();
+const ct:Counter = getCounter();
 
