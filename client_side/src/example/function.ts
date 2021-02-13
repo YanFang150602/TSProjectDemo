@@ -46,3 +46,31 @@ function es6Func(...args) {
 }
 console.log(es6Func(1)); // [1]
 console.log(es6Func(1, 2, 3)); // [1, 2, 3]
+function es6Func2(arg1, arg2 = 0) {
+  return arg1 + arg2;
+}
+// ts
+function tsFunc(arg1: number, arg2: number = 0) {
+  return arg1 + arg2;
+}
+// 扩展运算符...
+let arr5 = [1,2,3];
+let arr6 = [...arr5];
+console.log(`arr6 = ${arr6}`);
+let obj5 = {a: 'a1', b: 'b1'};
+let obj6 = {...obj5, c: 'c1'};
+console.log('obj6 =', obj6);
+
+// 函数重载
+// 使用function声明重载函数
+function handleData(x: string): string[];
+function handleData(x: number): number[];
+// 下面是函数重载定义的函数实体
+function handleData(x: any): any {
+  if (typeof x === 'string') {
+    return x.split('');
+  } else {
+    return x.toString().split('').map(item => Number(item));
+  }
+}
+
