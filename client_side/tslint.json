@@ -8,7 +8,8 @@
       "quotemark": [false], // false: 关闭双引号
       "semicolon": [false],	// false: 关闭末尾分号
       "interface-name": [true, "never-prefix"], // never-prefix: 不需要前缀
-      "no-console": [false] // false: 可以使用console
+      "no-console": [false], // false: 可以使用console
+      "max-classes-per-file": [false] // false: 一个ts文件里可以定义多个类
     },
     "rulesDirectory": []
 }
