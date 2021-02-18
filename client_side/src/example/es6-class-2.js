@@ -96,3 +96,30 @@ console.log(obj3.__proto__ === Object.prototype); // true
 // 子类的__proto__指向父类本身
 // 子类的prototype属性的__proto__指向父类的prototype属性
 // 类的实例的__proto__属性指向类的prototype属性
+
+// es5里原生类：
+// Boolean
+// Number
+// String
+// Array
+// Function
+// RegExp
+// Error
+// Object
+
+class CustomArray extends Array {
+  constructor(...args) {
+    super(...args);
+  }
+}
+const ca =  new CustomArray(3);
+ca.fill('8');
+console.log(ca);
+const ca2 =  new CustomArray(3, 4, 5);
+console.log(ca2);
+
+/**
+ * es6和es5在实现类的继承上是存在差异的：
+ * es5构造函数，先创建子构造函数实例this，然后再将父构造函数里的属性、方法添加到这个this上；
+ * es6的类，先从父类取到实例对象this，然后在调到super函数之后，再将子类的属性、方法添加到这个this上。
+ */
